@@ -8,7 +8,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="6" className="footer-copywright">
-          <h6>Code. Create. Innovate</h6>
+          <h6>Code. Create. Innovated</h6>
         
         </Col>
         <Col md="6" className="footer-body">
