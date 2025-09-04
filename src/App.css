@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Resume Section Background */
+.resume-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #1a1a40, #2a0845, #6441a5, #0f0c29);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating Decorative Shapes */
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  background: #ffffff;
+  z-index: 1;
+  animation: floaty 6s ease-in-out infinite alternate;
+}
+
+.shape1 {
+  width: 200px;
+  height: 200px;
+  top: 15%;
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.shape2 {
+  width: 120px;
+  height: 120px;
+  bottom: 20%;
+  right: 15%;
+  animation-duration: 10s;
+}
+
+.shape3 {
+  width: 80px;
+  height: 80px;
+  top: 30%;
+  right: 30%;
+  animation-duration: 7s;
+}
+
+@keyframes floaty {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(-40px) rotate(360deg);
+  }
+}
+
+/* Resume Button Styling */
+.resume-download-btn {
+  padding: 12px 28px;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.resume-download-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+}
+
